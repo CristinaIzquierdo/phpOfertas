@@ -1,24 +1,28 @@
-<?php 
+<?php
 
-class Oferta {
-    private $id, $nombre, $descripcion;
+class Oferta
+{
+    private $id, $titulo, $descripcion;
 
-    function __construct($id, $nombre, $descripcion)
+    function __construct($id, $titulo, $descripcion)
     {
         $this->id = $id;
-        $this->nombre = $nombre;
+        $this->titulo = $titulo;
         $this->descripcion = $descripcion;
     }
 
-    public function getId(){
+    public function getId()
+    {
         return $this->id;
     }
 
-    public function getnombre(){
-        return $this->nombre;
+    public function getTitulo()
+    {
+        return $this->titulo;
     }
 
-    public function getdescripcion(){
+    public function getDescripcion()
+    {
         return $this->descripcion;
     }
 }

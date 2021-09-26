@@ -1,6 +1,6 @@
 .ofertas {
   width: 50%;
-  margin: auto;
+  margin: 0px auto;
   margin-top: var(--padding);
   margin-bottom: var(--padding);
 }

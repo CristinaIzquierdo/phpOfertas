@@ -12,10 +12,11 @@
     include './components/nav.php';
     include './dao/DAOFactory.php';
     include './dao/ofertas/DAOOfertas.php';
-    include './dao/ofertas/DAOOfertasRAM.php';
+    include './dao/ofertas/DAOOfertasCRUD.php';
     include './entities/Oferta.php';
     include './components/ofertas.php';
     include './components/footer.php';
+    include './components/allOfertas.php'
     ?>
 
 </body>

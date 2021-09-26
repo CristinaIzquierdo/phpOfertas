@@ -21,7 +21,7 @@ class DAOFactory
     public function getDAOOfertas()
     {
         if (!isset($daoOfertas)) {
-            $daoOfertas = new DAOOfertasRAM();
+            $daoOfertas = new DAOOfertasCRUD();
         }
         return $daoOfertas;
     }
