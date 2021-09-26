@@ -1,0 +1,31 @@
+.formOferta {
+    width: 80%;
+    margin: auto;
+    margin-top: var(--padding);
+    margin-bottom: var(--padding);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .formOferta * {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formOferta input {
+    width: 50%;
+    list-style: none;
+    background: white;
+  
+    padding: var(--padding);
+    margin: var(--padding);
+  }
+  
+  .formOferta label {
+    font-size: 2em;
+    color: rgb(49, 49, 49);
+    font-weight: bold;
+  }
+
+  

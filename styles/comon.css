@@ -13,3 +13,20 @@
   body {
     background: whitesmoke;
   }
+  
+.panel {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.panel div {
+  width: 100%;
+}
+
+@media only screen and (max-width: 650px) {
+  .panel {
+    flex-direction: column-reverse;
+  }
+}

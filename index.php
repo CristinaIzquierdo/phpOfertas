@@ -14,9 +14,17 @@
     include './dao/ofertas/DAOOfertas.php';
     include './dao/ofertas/DAOOfertasCRUD.php';
     include './entities/Oferta.php';
-    include './components/ofertas.php';
+    ?>
+
+    <main class="panel">
+        <?php
+        include './components/allOfertas.php';
+        include './components/ofertas.php';
+        ?>
+    </main>
+
+    <?php
     include './components/footer.php';
-    include './components/allOfertas.php'
     ?>
 
 </body>

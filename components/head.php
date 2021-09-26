@@ -6,3 +6,4 @@
 <link rel="stylesheet" type="text/css" href="styles/nav.css" />
 <link rel="stylesheet" type="text/css" href="styles/footer.css" />
 <link rel="stylesheet" type="text/css" href="styles/ofertas.css" />
+<link rel="stylesheet" type="text/css" href="styles/form.css" />
