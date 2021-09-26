@@ -1,10 +1,9 @@
-<div class="formOferta">
-    <h1>Nueva oferta</h1>
-
-    <form action="index.php" method="POST" >
-        <input type="text" name="titulo" placeholder="titulo" id="titulo" required/>
-        <input type="text" name="descripcion" placeholder="descripcion" id="descripcion" required/>
-        <p><input type="submit" value="ENVIAR" class="footer"/>
+<section>
+    <form class="formOferta" action="index.php" method="POST">
+        <label>Nueva oferta</label>
+        <input type="text" name="titulo" placeholder="Título de la oferta" id="titulo" required />
+        <input type="text" name="descripcion" placeholder="Descripción de la oferta" id="descripcion" required />
+        <p><input type="submit" value="ENVIAR" id="enviar" />
             <?php
             $daoOfertas = DAOFactory::getInstance()->getDAOOfertas();
 
@@ -17,5 +16,4 @@
             ?>
         </p>
     </form>
-
-</div>
+</section>

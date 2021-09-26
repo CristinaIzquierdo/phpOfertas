@@ -1,5 +1,5 @@
 .formOferta {
-    width: 80%;
+    width: 90%;
     margin: auto;
     margin-top: var(--padding);
     margin-bottom: var(--padding);
@@ -17,7 +17,7 @@
     width: 50%;
     list-style: none;
     background: white;
-  
+    border-radius: 30px;
     padding: var(--padding);
     margin: var(--padding);
   }
@@ -28,4 +28,20 @@
     font-weight: bold;
   }
 
+  #enviar {
+    width: 10em;
+    border-radius: 5px;
+    border: transparent;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+#enviar:hover{
+  background: white;
+  color: var(--primary-color);
+
+}
   

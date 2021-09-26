@@ -1,4 +1,4 @@
-<div>
+<section>
     <ul class="ofertas">
         <?php
 
@@ -10,10 +10,11 @@
             echo
             '<li>
             <p>' . $oferta->getTitulo() . '</p>
-            <label for="">' . $oferta->getDescripcion() . '</label>
+            <label for="">' . $oferta->getDescripcion() .
+                '</label>
         </li>';
         }
 
         ?>
     </ul>
-</div>
+</section>
