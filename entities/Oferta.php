@@ -1,5 +1,9 @@
 <?php
-
+/** Class that represents a 'Oferta' 
+ * @param id unique number to identify the 'Oferta'
+ * @param titulo string for title
+ * @param descripcion string for description
+*/
 class Oferta
 {
     private $id, $titulo, $descripcion;

@@ -10,7 +10,7 @@
             if (isset($_POST['titulo'])) {
                 $titulo = $_POST['titulo'];
                 $descripcion = $_POST['descripcion'];
-                $daoOfertas->addOfertas($titulo, $descripcion, $mysqli);
+                $daoOfertas->add($titulo, $descripcion, $mysqli);
                 header('location: ' . 'http://gaboo.servehttp.com/cristina/phpOfertas/index.php');
             }
             ?>

@@ -4,7 +4,7 @@
 
         $daoOfertas = DAOFactory::getInstance()->getDAOOfertas();
 
-        $ofertas = $daoOfertas->getOfertas($mysqli);
+        $ofertas = $daoOfertas->getAll($mysqli);
 
         foreach ($ofertas as $oferta) {
             echo

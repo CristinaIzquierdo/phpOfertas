@@ -9,11 +9,19 @@
 
 <body>
     <?php
-    include './components/nav.php';
+    include './common/urls.php';
     include './dao/DAOFactory.php';
     include './dao/ofertas/DAOOfertas.php';
     include './dao/ofertas/DAOOfertasCRUD.php';
+    
     include './entities/Oferta.php';
+    
+    if (!isset($_SESSION['user'])) {
+        header('location: ' . $url . '/login.php');
+    }
+    ?>
+    <?php
+    include './components/nav.php';
     ?>
 
     <main class="panel">

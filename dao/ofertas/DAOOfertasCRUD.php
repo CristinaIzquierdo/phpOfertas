@@ -4,11 +4,10 @@ class DAOOfertasCRUD
 {
 
     /**
-     * Function that executes a sql query to obtain the 'Ofertas' from the data base.
      * @param mysqli receives the parameters to connect to the database.
      * @return resultado the result of the sql query.
      */
-    public function getOfertas($mysqli)
+    public function getAll($mysqli)
     {
         $sql = 'SELECT * FROM Oferta';
         $resultado = $mysqli->query($sql);
@@ -22,17 +21,17 @@ class DAOOfertasCRUD
     }
 
     /**
-     * Function that executes a sql query that ADDS data to the table 'Ofertas'.   
-     * @param titulo receives the title of the 'Oferta'
-     * @param descripcion receives the descripcion of the 'Oferta'
+     * @param oferta object to add to the database
      * @param mysqli receives the parameters to connect to the database
      */
-    public function addOfertas($titulo, $descripcion, $mysqli)
+    public function add($mysqli, $oferta)
     {
-        $titulo = $_POST['titulo'];
-        $descripcion = $_POST['descripcion'];
-
-        $sql = "INSERT INTO Oferta (titulo, descripcion) VALUES ('$titulo', '$descripcion');";
+        $sql = "INSERT INTO Oferta (
+            titulo, 
+            descripcion) VALUES (
+                '" . $oferta->getTitulo() . "',
+                '" . $oferta->getDescripcion() . "'
+            );";
         $mysqli->query($sql);
     }
 }

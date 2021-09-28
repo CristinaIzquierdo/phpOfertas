@@ -5,6 +5,7 @@ class DAOFactory
 
     private static $daoFactory;
     private $daoOfertas;
+    private $daoUsuarios;
 
     private function __construct()
     {
@@ -24,5 +25,13 @@ class DAOFactory
             $daoOfertas = new DAOOfertasCRUD();
         }
         return $daoOfertas;
+    }
+
+    public function getDAOusuarios()
+    {
+        if (!isset($daoUsuarios)) {
+            $daoUsuarios = new DAOUsuarioCRUD();
+        }
+        return $daoUsuarios;
     }
 }

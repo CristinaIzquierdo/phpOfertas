@@ -2,7 +2,7 @@
 
 interface DAOOfertas
 {
-    public function getOfertas();
+    public function getAll();
 
-    public function addOfertas();
+    public function add();
 }
